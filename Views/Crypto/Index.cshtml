@@ -349,13 +349,13 @@
     var ltcMIN = 999999999999.99;
     var ltcMAX = 0;
 
-    @for (int i = 23; i < 30; i++){
+    @for (int i = 0; i < 30; i++){
 
         // Bitcoin Cash
         if(@ViewBag.BCH[i] < bchMIN){
             bchMIN = (int)Math.Round(@ViewBag.BCH[i], 2);
         }
-        if(@ViewBag.BCH[i] > bchMIN){
+        if(@ViewBag.BCH[i] > bchMAX){
             bchMAX = (int)Math.Round(@ViewBag.BCH[i], 2);
         }
 
@@ -364,7 +364,7 @@
         if(@ViewBag.BTC[i] < btcMIN){
             btcMIN = (int)Math.Round(@ViewBag.BTC[i], 2);
         }
-        if(@ViewBag.BTC[i] > btcMIN){
+        if(@ViewBag.BTC[i] > btcMAX){
             btcMAX = (int)Math.Round(@ViewBag.BTC[i], 2);
         }
 
@@ -373,7 +373,7 @@
         if(@ViewBag.ETH[i] < ethMIN){
             ethMIN = (int)Math.Round(@ViewBag.ETH[i], 2);
         }
-        if(@ViewBag.ETH[i] > ethMIN){
+        if(@ViewBag.ETH[i] > ethMAX){
             ethMAX = (int)Math.Round(@ViewBag.ETH[i], 2);
         }
 
@@ -382,7 +382,7 @@
         if(@ViewBag.LTC[i] < ltcMIN){
             ltcMIN = (int)Math.Round(@ViewBag.LTC[i], 2);
         }
-        if(@ViewBag.LTC[i] > ltcMIN){
+        if(@ViewBag.LTC[i] > ltcMAX){
             ltcMAX = (int)Math.Round(@ViewBag.LTC[i], 2);
         }
 
@@ -399,7 +399,7 @@
     <br>
     <p id="high"><b>Highest:</b> $@btcMAX USD</p>
     <p id="low"><b>Lowest:</b> $@btcMIN USD</p>
-    <center><a href="#" class="btn btn-light">Buy</a></center>
+    <center><a href="https://bitcoin.org/en/buy" class="btn btn-light" target="blank">Buy</a></center>
 
     </div>
 
@@ -412,7 +412,7 @@
     <p id="high"><b>Highest:</b> $@ethMAX USD</p>
     <p id="low"><b>Lowest:</b> $@ethMIN USD</p>
 
-    <center><a href="#" class="btn btn-light">Buy</a></center>
+    <center><a href="https://www.ethereum.org/" class="btn btn-light" target="blank">Buy</a></center>
 
     </div>
 
@@ -425,7 +425,7 @@
     <p id="high"><b>Highest:</b> $@ltcMAX USD</p>
     <p id="low"><b>Lowest:</b> $@ltcMIN USD</p>
 
-    <center><a href="#" class="btn btn-light">Buy</a></center>
+    <center><a href="https://litecoin.com/#exchanges" class="btn btn-light" target="blank">Buy</a></center>
 
     </div>
 
@@ -438,7 +438,7 @@
     <p id="high"><b>Highest:</b>  $@bchMAX USD</p>
     <p id="low"><b>Lowest:</b> $@bchMIN USD</p>
 
-    <center><a href="#" class="btn btn-light">Buy</a></center>
+    <center><a href="https://www.bitcoincash.org/" class="btn btn-light" target="blank">Buy</a></center>
 
     </div>
 </div>
