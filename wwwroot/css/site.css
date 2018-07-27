@@ -1,0 +1,61 @@
+﻿body {
+    padding-top: 0px;
+    padding-bottom: 20px;
+    background-color: white;
+    font-family: 'Comfortaa', cursive;
+    -webkit-font-smoothing: antialiased;
+    font-smooth: auto;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+#header_new{
+    background: linear-gradient(rgb(15, 98, 189) 24%, rgb(10, 64, 122) 168%);
+    margin: 0px auto;
+    height: 300px;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    padding-top: 28px;
+}
+
+.bottom-block{
+    display: inline-block;
+    width: 22%;
+    margin: 10px 12px;
+    padding: 10px;
+    background: linear-gradient(rgb(15, 98, 189) 24%, rgb(10, 64, 122) 168%);
+    border-radius: 10px;
+    height: 220px;
+    color: white;
+    vertical-align: top;
+}
+
+.bottom-block-title{
+    width: 100%; 
+    background-color: white; 
+    padding: 5px; 
+    border-radius: 10px; 
+    height: 50px;
+}

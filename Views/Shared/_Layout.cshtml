@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cryptobase</title>
+
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+  <style>
+  body {
+    padding-top: 0px;
+    padding-bottom: 20px;
+    background-color: white;
+    font-family: 'Comfortaa', cursive;
+    -webkit-font-smoothing: antialiased;
+    font-smooth: auto;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+#header_new{
+    background: linear-gradient(rgb(15, 98, 189) 24%, rgb(10, 64, 122) 168%);
+    margin: 0px auto;
+    height: 300px;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    padding-top: 28px;
+}
+
+.bottom-block{
+    display: inline-block;
+    width: 22%;
+    margin: 10px 12px;
+    padding: 10px;
+    background: linear-gradient(rgb(15, 98, 189) 24%, rgb(10, 64, 122) 168%);
+    border-radius: 10px;
+    height: 220px;
+    color: white;
+    vertical-align: top;
+}
+
+.bottom-block-title{
+    width: 100%; 
+    background-color: white; 
+    padding: 5px; 
+    border-radius: 10px; 
+    height: 50px;
+}
+
+  </style>
+
+</head>
+<body>
+
+<div style="position: absolute; top: 28px; right: 10px;"><a href="#" style="color: white; margin-right: 10px;">Log In</a>  <a href="#" class="btn btn-light">Sign Up</a></div>
+ <div id="header_new"><center>cryptobase</center></div>
+    <div class="container body-content" style="-webkit-box-shadow: 0px 0px 32px -2px rgba(0,0,0,0.39);
+    -moz-box-shadow: 0px 0px 32px -2px rgba(0,0,0,0.39);
+    box-shadow: 0px 0px 32px -2px rgba(0,0,0,0.39);
+    margin-top: -200px; background-color: white; border-radius: 10px; padding: 15px;">
+        @RenderBody()
+    </div>
+
+    <footer>
+        <center><br><p>&copy; 2018 - Cryptobase</p></center>
+    </footer>
+
+    <!-- <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+        </script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
+
+    @RenderSection("Scripts", required: false) -->
+</body>
+</html>
